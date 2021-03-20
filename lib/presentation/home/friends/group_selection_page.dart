@@ -39,7 +39,7 @@ class GroupSelectionPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Verify your identity"),
-                if (snapshot != null)
+                if (snapshot?.file != null)
                   Image.file(snapshot.file, height: 150)
                 else
                   Placeholder(
